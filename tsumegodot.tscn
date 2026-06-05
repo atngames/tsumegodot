@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bmfsx35o50b8f"]
 
 [ext_resource type="Script" uid="uid://b17w8beqaa4qv" path="res://tsumegodot.gd" id="1_q33w4"]
+[ext_resource type="Script" uid="uid://fwbohwfxlk01" path="res://vbc_decks.gd" id="2_ecp28"]
 
 [node name="Tsumegodot" type="Control" unique_id=81857247]
 layout_mode = 3
@@ -35,5 +36,9 @@ layout_mode = 2
 [node name="Button" type="Button" parent="MarginContainer/CenterContainer" unique_id=1777641986]
 layout_mode = 2
 text = "bouton"
+
+[node name="VBCDecks" type="VBoxContainer" parent="MarginContainer/CenterContainer" unique_id=161578874]
+layout_mode = 2
+script = ExtResource("2_ecp28")
 
 [connection signal="pressed" from="MarginContainer/CenterContainer/Button" to="." method="_on_button_pressed"]
