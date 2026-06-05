@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for d in ./*; do
+	if [ -d "$d" ]; then
+		cd "$d"
+		pwd
+		for f in ./OEBPS/images/*.svg; do
+			mv -v "$f" .
+		done
+		rm -rf ./OEBPS
+		rm -rf ./META-INF
+		rm -rf ./mimetype
+		cd ..
+	fi
+done
