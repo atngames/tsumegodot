@@ -10,20 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func contenu_repertoire(chemin):
-	var repertoire = DirAccess.open(chemin)
-	if repertoire:
-		repertoire.list_dir_begin()
-		var nom_fichier = repertoire.get_next()
-		while nom_fichier!= "":
-			if repertoire.current_is_dir():
-				print("Répertoire trouvé : " + nom_fichier)
-			else:
-				print("Fichier trouvé : " + nom_fichier)
-			nom_fichier = repertoire.get_next()
-	else:
-		print("Une erreur s'est produite lors de l'accès au chemin.")
-		
+
 		
 func _on_button_pressed() -> void:
 		# Create an HTTP request node and connect its completion signal.
@@ -33,13 +20,11 @@ func _on_button_pressed() -> void:
 
 	#var file = FileAccess.open("user://201-basic-go-problems.zip", FileAccess.WRITE) 
 #
-	#http_request.set_download_file("user://200-basic-go-problems.zip")
-	#var error = http_request.request("https://github.com/atngames/tsumegodot/raw/refs/heads/main/problems/tsumego/200-basic-go-problems.zip")
-	#if error != OK:
-		#push_error("An error occurred in the HTTP request.")
-	#
+	http_request.set_download_file("user://tsumegos_decks.txt")
+	var error = http_request.request("https://github.com/atngames/tsumegodot/raw/refs/heads/main/problems/tsumego/aaa_decks.txt")
+	if error != OK:
+		push_error("An error occurred in the HTTP request.")
 	
-	contenu_repertoire("https://github.com/atngames/tsumegodot/raw/refs/heads/main/problems/tsumego")
 	#
 	#var reader = ZIPReader.new()
 	#var err = reader.open("oooooooooooo")
