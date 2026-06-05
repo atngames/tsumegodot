@@ -21,7 +21,7 @@ func _on_button_pressed() -> void:
 	#var file = FileAccess.open("user://201-basic-go-problems.zip", FileAccess.WRITE) 
 #
 	http_request.set_download_file("user://tsumegos_decks.txt")
-	var error = http_request.request("https://github.com/atngames/tsumegodot/raw/refs/heads/main/problems/tsumego/aaa_decks.txt")
+	var error = http_request.request("https://raw.githubusercontent.com/atngames/tsumegodot/main/problems/tsumegos/.decks.txt")
 	if error != OK:
 		push_error("An error occurred in the HTTP request.")
 	
