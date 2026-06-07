@@ -1,106 +1,106 @@
-200-basic-go-problems.zip
-200-selected-problems-for-repetitive-practice.zip
-beautiful-dan-level-tsumego-100.zip
-bedtime-tsumego-part-1.zip
-bedtime-tsumego-part-2.zip
-bedtime-tsumego-part-3.zip
-common-life-and-death-problems.zip
-compact-go-puzzles-to-learn-the-basics.zip
-fighting-and-escaping-part-1.zip
-fighting-and-escaping-part-2.zip
-fighting-and-escaping-part-3.zip
-fujisawa-shuko-classroom.zip
-go-endgame-techniques.zip
-gokyo-seimyo-endgame.zip
-go-puzzles-at-a-glance.zip
-go-seigen-endgame-part-1.zip
-go-seigen-endgame-part-2.zip
-go-seigen-endgame-part-3.zip
-go-seigen-tsumego-collection-part-1.zip
-go-seigen-tsumego-collection-part-2.zip
-go-seigen-tsumego-collection-part-3.zip
-go-seigen-tsumego-collection-part-4.zip
-go-seigen-tsumego-collection-part-5.zip
-go-seigen-tsumego-collection-part-6.zip
-guanzi-pu-endgame.zip
-hashimoto-famous-creations.zip
-hashimoto-masterpiece-collection.zip
-heavenly-dragons-part-1.zip
-heavenly-dragons-part-2.zip
-heavenly-dragons-part-3.zip
-heavenly-dragons-part-4.zip
-hitomi-tsumego.zip
-igo-hatsuyoron.zip
-increase-your-fighting-strength-at-go-part-1.zip
-increase-your-fighting-strength-at-go-part-2.zip
-ishida-yoshio-tesuji.zip
-ishida-yoshio-tsumego-challenge.zip
-kada-katsuji-tsumego-part-1.zip
-kada-katsuji-tsumego-part-2.zip
-kada-katsuji-tsumego-part-3.zip
-lee-chang-hos-endgame-techniques.zip
-lee-chang-hos-selected-tesuji-part-1.zip
-lee-chang-hos-selected-tesuji-part-2.zip
-lee-chang-hos-selected-tesuji-part-3.zip
-lee-chang-hos-selected-tsumego-part-1.zip
-lee-chang-hos-selected-tsumego-part-2.zip
-lee-chang-hos-selected-tsumego-part-3.zip
-maeda-tsumego-part-1.zip
-maeda-tsumego-part-2.zip
-maeda-tsumego-part-3.zip
-new-korean-endgame-dictionary.zip
-nie-weipings-endgame-encyclopedia.zip
-nie-weipings-tesuji-encyclopedia.zip
-nie-weipings-tsumego-encyclopedia.zip
-ohashi-style-power-up-tsumego-part-1.zip
-ohashi-style-power-up-tsumego-part-2.zip
-sakata-no-go-endgame.zip
-seedling-project.zip
-segoe-tesuji-dictionary-part-1.zip
-segoe-tesuji-dictionary-part-2.zip
-segoe-tesuji-dictionary-part-3.zip
-segoe-tesuji-dictionary-part-4.zip
-segoe-tsumego-dictionary-part-1.zip
-segoe-tsumego-dictionary-part-2.zip
-segoe-tsumego-dictionary-part-3.zip
-segoe-tsumego-dictionary-part-4.zip
-shikatsu-myoki.zip
-showa-tsumego.zip
-specialized-training-in-capturing-races.zip
-specialized-training-in-tesuji-1.zip
-specialized-training-in-tesuji-2.zip
-specialized-training-in-tesuji-3.zip
-specialized-training-in-tesuji-4.zip
-specialized-training-in-tesuji-5.zip
-specialized-training-in-tesuji-6.zip
-specialized-training-in-tsumego-1.zip
-specialized-training-in-tsumego-2.zip
-specialized-training-in-tsumego-3.zip
-specialized-training-in-tsumego-4.zip
-specialized-training-in-tsumego-5.zip
-specialized-training-in-tsumego-6.zip
-the-great-tesuji-encyclopedia-1.zip
-the-great-tesuji-encyclopedia-2.zip
-the-great-tesuji-encyclopedia-3.zip
-the-great-tesuji-encyclopedia-4.zip
-the-great-tesuji-encyclopedia-5.zip
-the-great-tesuji-encyclopedia-6.zip
-the-great-tesuji-encyclopedia-7.zip
-weiqi-life-and-death-1000-problems-part-1.zip
-weiqi-life-and-death-1000-problems-part-2.zip
-weiqi-life-and-death-1000-problems-part-3.zip
-weiqi-life-and-death-1000-problems-part-4.zip
-weiqi-life-and-death-drills-beginner-part-1.zip
-weiqi-life-and-death-drills-beginner-part-2.zip
-weiqi-life-and-death-drills-beginner-part-3.zip
-weiqi-life-and-death-drills-beginner-part-4.zip
-weiqi-life-and-death-drills-intermediate-part-1.zip
-weiqi-life-and-death-drills-intermediate-part-2.zip
-weiqi-life-and-death-drills-intermediate-part-3.zip
-weiqi-life-and-death-drills-intermediate-part-4.zip
-weiqi-rapid-drill-800-part-1.zip
-weiqi-rapid-drill-800-part-2.zip
-weiqi-rapid-drill-800-part-3.zip
-weiqi-rapid-drill-800-part-4.zip
-weiqi-small-leisure-collection.zip
-xuanxuan-qijing.zip
+200 Basic Go Problems,6k,200-basic-go-problems.zip
+200 Selected Problems for Repetitive Practice,6k,200-selected-problems-for-repetitive-practice.zip
+Beautiful Dan-Level Tsumego 100,1d,beautiful-dan-level-tsumego-100.zip
+Bedtime Tsumego 1,5k,bedtime-tsumego-part-1.zip
+Bedtime Tsumego 2,5k,bedtime-tsumego-part-2.zip
+Bedtime Tsumego 3,5k,bedtime-tsumego-part-3.zip
+Common Life & Death Problems,4k,common-life-and-death-problems.zip
+Compact Go Puzzles to Learn the Basics,7k,compact-go-puzzles-to-learn-the-basics.zip
+Fighting and Escaping,4k,fighting-and-escaping-part-1.zip
+Fighting and Escaping,4k,fighting-and-escaping-part-2.zip
+Fighting and Escaping,4k,fighting-and-escaping-part-3.zip
+Fujisawa Shuko Classroom,4k,fujisawa-shuko-classroom.zip
+Go Endgame Techniques,3k,go-endgame-techniques.zip
+Gokyo Seimyo Endgame,1d,gokyo-seimyo-endgame.zip
+Go Puzzles at a Glance,8k,go-puzzles-at-a-glance.zip
+Go Seigen Endgame 1,1d,go-seigen-endgame-part-1.zip
+Go Seigen Endgame 2,1d,go-seigen-endgame-part-2.zip
+Go Seigen Endgame 3,1d,go-seigen-endgame-part-3.zip
+Go Seigen Tsumego Collection 1,1d,go-seigen-tsumego-collection-part-1.zip
+Go Seigen Tsumego Collection 2,1d,go-seigen-tsumego-collection-part-2.zip
+Go Seigen Tsumego Collection 3,1d,go-seigen-tsumego-collection-part-3.zip
+Go Seigen Tsumego Collection 4,1d,go-seigen-tsumego-collection-part-4.zip
+Go Seigen Tsumego Collection 5,1d,go-seigen-tsumego-collection-part-5.zip
+Go Seigen Tsumego Collection 6,1d,go-seigen-tsumego-collection-part-6.zip
+Guanzi Pu Endgame,2d,guanzi-pu-endgame.zip
+Hashimoto Famous Creations,2d,hashimoto-famous-creations.zip
+Hashimoto Masterpiece Collection,1k,hashimoto-masterpiece-collection.zip
+Heavenly Dragons 1,4d,heavenly-dragons-part-1.zip
+Heavenly Dragons 2,4d,heavenly-dragons-part-2.zip
+Heavenly Dragons 3,4d,heavenly-dragons-part-3.zip
+Heavenly Dragons 4,4d,heavenly-dragons-part-4.zip
+Hitomi Tsumego,6k,hitomi-tsumego.zip
+Igo Hatsuyoron,5d,igo-hatsuyoron.zip
+Increase Your Fighting Strength at Go 1,1d,increase-your-fighting-strength-at-go-part-1.zip
+Increase Your Fighting Strength at Go 2,1d,increase-your-fighting-strength-at-go-part-2.zip
+Ishida Yoshio Tesuji,4k,ishida-yoshio-tesuji.zip
+Ishida Yoshio Tsumego Challenge,4k,ishida-yoshio-tsumego-challenge.zip
+Kada Katsuji Tsumego 1,3d,kada-katsuji-tsumego-part-1.zip
+Kada Katsuji Tsumego 2,3d,kada-katsuji-tsumego-part-2.zip
+Kada Katsuji Tsumego 3,3d,kada-katsuji-tsumego-part-3.zip
+Lee Chang-ho's Endgame Techniques,2k,lee-chang-hos-endgame-techniques.zip
+Lee Chang-ho's Selected Tesuji 1,8k,lee-chang-hos-selected-tesuji-part-1.zip
+Lee Chang-ho's Selected Tesuji 2,8k,lee-chang-hos-selected-tesuji-part-2.zip
+Lee Chang-ho's Selected Tesuji 3,8k,lee-chang-hos-selected-tesuji-part-3.zip
+Lee Chang-ho's Selected Tsumego 1,7k,lee-chang-hos-selected-tsumego-part-1.zip
+Lee Chang-ho's Selected Tsumego 2,7k,lee-chang-hos-selected-tsumego-part-2.zip
+Lee Chang-ho's Selected Tsumego 3,7k,lee-chang-hos-selected-tsumego-part-3.zip
+Maeda Tsumego 1,3k,maeda-tsumego-part-1.zip
+Maeda Tsumego 1,3k,maeda-tsumego-part-2.zip
+Maeda Tsumego 1,3k,maeda-tsumego-part-3.zip
+New Korean Endgame Dictionary,2k,new-korean-endgame-dictionary.zip
+Nie Weiping's Endgame Encyclopedia,2k,nie-weipings-endgame-encyclopedia.zip
+Nie Weiping's Tesuji Encyclopedia,6k,nie-weipings-tesuji-encyclopedia.zip
+Nie Weiping's Tsumego Encyclopedia,2k,nie-weipings-tsumego-encyclopedia.zip
+Ohashi-Style Power-Up Tsumego 1,6k,ohashi-style-power-up-tsumego-part-1.zip
+Ohashi-Style Power-Up Tsumego 2,6k,ohashi-style-power-up-tsumego-part-2.zip
+Sakata no Go Endgame,1d,sakata-no-go-endgame.zip
+Seedling Project,8k,seedling-project.zip
+Segoe Tesuji Dictionary 1,1k,segoe-tesuji-dictionary-part-1.zip
+Segoe Tesuji Dictionary 2,1k,segoe-tesuji-dictionary-part-2.zip
+Segoe Tesuji Dictionary 3,1k,segoe-tesuji-dictionary-part-3.zip
+Segoe Tesuji Dictionary 4,1k,segoe-tesuji-dictionary-part-4.zip
+Segoe Tsumego Dictionary 1,1k,segoe-tsumego-dictionary-part-1.zip
+Segoe Tsumego Dictionary 2,1k,segoe-tsumego-dictionary-part-2.zip
+Segoe Tsumego Dictionary 3,1k,segoe-tsumego-dictionary-part-3.zip
+Segoe Tsumego Dictionary 4,1k,segoe-tsumego-dictionary-part-4.zip
+Shikatsu Myoki,2d,shikatsu-myoki.zip
+Showa Tsumego,3d,showa-tsumego.zip
+Specialized Training in Capturing Races,10k,specialized-training-in-capturing-races.zip
+Specialized Training in Tesuji 1,11k,specialized-training-in-tesuji-1.zip
+Specialized Training in Tesuji 2,11k,specialized-training-in-tesuji-2.zip
+Specialized Training in Tesuji 3,11k,specialized-training-in-tesuji-3.zip
+Specialized Training in Tesuji 4,11k,specialized-training-in-tesuji-4.zip
+Specialized Training in Tesuji 5,11k,specialized-training-in-tesuji-5.zip
+Specialized Training in Tesuji 6,11k,specialized-training-in-tesuji-6.zip
+Specialized Training in Tsumego 1,10k,specialized-training-in-tsumego-1.zip
+Specialized Training in Tsumego 2,10k,specialized-training-in-tsumego-2.zip
+Specialized Training in Tsumego 3,10k,specialized-training-in-tsumego-3.zip
+Specialized Training in Tsumego 4,10k,specialized-training-in-tsumego-4.zip
+Specialized Training in Tsumego 5,10k,specialized-training-in-tsumego-5.zip
+Specialized Training in Tsumego 6,10k,specialized-training-in-tsumego-6.zip
+The Great Tesuji Encyclopedia 1,2k,the-great-tesuji-encyclopedia-1.zip
+The Great Tesuji Encyclopedia 2,2k,the-great-tesuji-encyclopedia-2.zip
+The Great Tesuji Encyclopedia 3,2k,the-great-tesuji-encyclopedia-3.zip
+The Great Tesuji Encyclopedia 4,2k,the-great-tesuji-encyclopedia-4.zip
+The Great Tesuji Encyclopedia 5,2k,the-great-tesuji-encyclopedia-5.zip
+The Great Tesuji Encyclopedia 6,2k,the-great-tesuji-encyclopedia-6.zip
+The Great Tesuji Encyclopedia 7,2k,the-great-tesuji-encyclopedia-7.zip
+Weiqi Life & Death 1000 Problems 1,6k,weiqi-life-and-death-1000-problems-part-1.zip
+Weiqi Life & Death 1000 Problems 2,6k,weiqi-life-and-death-1000-problems-part-2.zip
+Weiqi Life & Death 1000 Problems 3,6k,weiqi-life-and-death-1000-problems-part-3.zip
+Weiqi Life & Death 1000 Problems 4,6k,weiqi-life-and-death-1000-problems-part-4.zip
+Weiqi Life & Death Drills Beginner 1,4k,weiqi-life-and-death-drills-beginner-part-1.zip
+Weiqi Life & Death Drills Beginner 2,4k,weiqi-life-and-death-drills-beginner-part-2.zip
+Weiqi Life & Death Drills Beginner 3,4k,weiqi-life-and-death-drills-beginner-part-3.zip
+Weiqi Life & Death Drills Beginner 4,4k,weiqi-life-and-death-drills-beginner-part-4.zip
+Weiqi Life & Death Drills Intermediate 1,1d,weiqi-life-and-death-drills-intermediate-part-1.zip
+Weiqi Life & Death Drills Intermediate 2,1d,weiqi-life-and-death-drills-intermediate-part-2.zip
+Weiqi Life & Death Drills Intermediate 3,1d,weiqi-life-and-death-drills-intermediate-part-3.zip
+Weiqi Life & Death Drills Intermediate 4,1d,weiqi-life-and-death-drills-intermediate-part-4.zip
+Weiqi Rapid Drill 800 1,3k,weiqi-rapid-drill-800-part-1.zip
+Weiqi Rapid Drill 800 2,3k,weiqi-rapid-drill-800-part-2.zip
+Weiqi Rapid Drill 800 3,3k,weiqi-rapid-drill-800-part-3.zip
+Weiqi Rapid Drill 800 4,3k,weiqi-rapid-drill-800-part-4.zip
+Weiqi Small Leisure Collection,3k,weiqi-small-leisure-collection.zip
+Xuanxuan Qijing,1d,xuanxuan-qijing.zip
