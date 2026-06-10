@@ -30,15 +30,73 @@ theme_override_constants/margin_bottom = 16
 layout_mode = 2
 color = Color(0.62152386, 0.6215239, 0.6215237, 1)
 
-[node name="CenterContainer" type="CenterContainer" parent="MarginContainer" unique_id=2044212064]
+[node name="TabContainer" type="TabContainer" parent="MarginContainer" unique_id=1018814304]
+layout_mode = 2
+tab_alignment = 1
+current_tab = 1
+
+[node name="Study" type="MarginContainer" parent="MarginContainer/TabContainer" unique_id=1617601170]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="Deck" type="MarginContainer" parent="MarginContainer/TabContainer" unique_id=808973703]
+unique_name_in_owner = true
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="Settings" type="MarginContainer" parent="MarginContainer/TabContainer" unique_id=298764095]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="Packs" type="MarginContainer" parent="MarginContainer/TabContainer" unique_id=1265643841]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/TabContainer/Packs" unique_id=457749266]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="MarginContainer/CenterContainer" unique_id=1777641986]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/TabContainer/Packs/VBoxContainer" unique_id=1519621527]
 layout_mode = 2
-text = "bouton"
 
-[node name="VBCDecks" type="VBoxContainer" parent="MarginContainer/CenterContainer" unique_id=161578874]
+[node name="BTitle" type="Button" parent="MarginContainer/TabContainer/Packs/VBoxContainer/HBoxContainer" unique_id=1828444168]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+text = "My Deck"
+
+[node name="BFilter" type="Button" parent="MarginContainer/TabContainer/Packs/VBoxContainer/HBoxContainer" unique_id=1962588636]
+layout_mode = 2
+text = "Filter"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/TabContainer/Packs/VBoxContainer" unique_id=438700933]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/TabContainer/Packs/VBoxContainer/MarginContainer" unique_id=2099327900]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/TabContainer/Packs/VBoxContainer/MarginContainer/ScrollContainer" unique_id=782373305]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 16
+
+[node name="VBCDecks" type="VBoxContainer" parent="MarginContainer/TabContainer/Packs/VBoxContainer/MarginContainer/ScrollContainer/MarginContainer" unique_id=161578874]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 8
 script = ExtResource("2_ecp28")
 
-[connection signal="pressed" from="MarginContainer/CenterContainer/Button" to="." method="_on_button_pressed"]
+[node name="Packs" type="Node" parent="." unique_id=649701840]
+
+[node name="Decks" type="Node" parent="." unique_id=1736237219]
