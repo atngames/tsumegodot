@@ -5,7 +5,8 @@ var pack := "tsumegos"
 var http_request := HTTPRequest.new()
 
 var icon_non_fav = preload("res://icons/NonFavorite.svg")
-var icon_dl = preload("res://icons/lets-icons--import.svg")
+var icon_download = preload("res://icons/lets-icons--import.svg")
+var icon_del = preload("res://icons/lets-icons--del-alt.svg")
 
 var user_dir = DirAccess.open("user://")
 var packs_dir = DirAccess.open("user://packs/")
@@ -41,64 +42,90 @@ func request_packs() :
 func _http_request_completed(result, response_code, headers, body):
 	if result != HTTPRequest.RESULT_SUCCESS:
 		push_error("Pack list couldn't be downloaded. Is there a network issue ?")
-	
+
+	rebuild_packs_list()
+
+
+func rebuild_packs_list():
 	# For each line of the pack file, create a Node in the VBContainer
 	# Clean the name
 	var file = FileAccess.open("user://packs.txt", FileAccess.READ)
 	var content = file.get_as_text()
-	
+
 	# We can do better than removing everything
 	for c in get_children():
 		if c is HBoxContainer:
 			c.queue_free()
-		
+
 	for line in content.split("\n", false) :
 		var line_content = line.split(",")
-		
+
 		var hbc = HBoxContainer.new()
 		add_child(hbc)
 		hbc.add_theme_constant_override("separation", 16)
 		hbc.set_h_size_flags(hbc.SIZE_EXPAND_FILL)
-		
-		var checkbox_or_download
-		if user_dir.file_exists(line_content[2]):
-			checkbox_or_download = CheckBox.new()
+
+		var delete_or_download = TextureButton.new()
+		delete_or_download.stretch_mode = delete_or_download.STRETCH_KEEP_ASPECT_CENTERED
+		delete_or_download.mouse_entered.connect(self._on_button_mouse_hover.bind(delete_or_download))
+		delete_or_download.mouse_exited.connect(self._on_button_mouse_unhover.bind(delete_or_download))
+		if packs_dir.dir_exists(line_content[2].get_basename()):
+			delete_or_download.texture_normal = icon_del
+			delete_or_download.pressed.connect(self._on_del_pressed.bind(line_content[2]))
 		else:
-			checkbox_or_download = TextureButton.new()
-			checkbox_or_download.stretch_mode = checkbox_or_download.STRETCH_KEEP_ASPECT_CENTERED
-			checkbox_or_download.texture_normal = icon_dl
-			checkbox_or_download.pressed.connect(self._on_dl_pressed.bind(line_content[2]))
-			checkbox_or_download.mouse_entered.connect(self._on_button_mouse_hover.bind(checkbox_or_download))
-			checkbox_or_download.mouse_exited.connect(self._on_button_mouse_unhover.bind(checkbox_or_download))
-		hbc.add_child(checkbox_or_download)
-		
+			delete_or_download.texture_normal = icon_download
+			delete_or_download.pressed.connect(self._on_download_pressed.bind(line_content[2]))
+		hbc.add_child(delete_or_download)
+
 		var button_pack = Button.new()
 		hbc.add_child(button_pack)
 		button_pack.set_h_size_flags(button_pack.SIZE_EXPAND_FILL)
 		button_pack.text = "%s" % line_content[0]
-		
+		button_pack.pressed.connect(self._on_download_pressed.bind(line_content[2]))
+		button_pack.mouse_entered.connect(self._on_button_mouse_hover.bind(delete_or_download))
+		button_pack.mouse_exited.connect(self._on_button_mouse_unhover.bind(delete_or_download))
+
 		var label_rank = Label.new()
 		hbc.add_child(label_rank)
 		label_rank.text = "(%s)" % line_content[1]
-		
+
 		var button_fav := TextureButton.new()
 		hbc.add_child(button_fav)
 		button_fav.stretch_mode = button_fav.STRETCH_KEEP_ASPECT_CENTERED
 		button_fav.texture_normal = icon_non_fav
 
+
 func _on_button_mouse_hover(button: TextureButton) -> void:
 	button.modulate = Color.DIM_GRAY
-	
+
 func _on_button_mouse_unhover(button: TextureButton) -> void:
 	button.modulate = Color.WHITE
-	
+
+
 func _on_visibility_changed():
 	if %Packs.visible:
 		request_packs()
 
 
-func _on_dl_pressed(file):
-	print("Downloading " + file)
+func _on_del_pressed(file):
+	var confirmDelete := ConfirmationDialog.new()
+	confirmDelete.popup_exclusive_centered_clamped(self)
+	confirmDelete.confirmed.connect(self._on_delete_confirmed.bind(file))
+
+func _on_delete_confirmed(file):
+	remove_pack(file.get_basename())
+	rebuild_packs_list()
+
+
+func remove_pack(directory: String) -> void:
+	for dir_name in packs_dir.get_directories_at("user://packs/%s" % directory):
+		remove_pack(directory.path_join(dir_name))
+	for file_name in packs_dir.get_files_at("user://packs/%s" % directory):
+		packs_dir.remove(directory.path_join(file_name))
+	packs_dir.remove_absolute("user://packs/%s" % directory)
+
+
+func _on_download_pressed(file):
 	# download zip file
 	var zip_request := HTTPRequest.new()
 	add_child(zip_request)
@@ -113,15 +140,16 @@ func _zip_request_completed(result, response_code, headers, body, file, zip_requ
 	extract_zip_file(file)
 	zip_request.queue_free()
 	packs_dir.remove(file)
+	rebuild_packs_list()
 
-	
+
 func extract_zip_file(zip_name):
 	var reader = ZIPReader.new()
 	var err = reader.open("user://packs/%s" % zip_name)
 	if err != OK :
 		print("error while extracting zip %s" % zip_name)
 		return
-		
+
 	# Destination directory for the extracted files (this folder must exist before extraction).
 	# Not all ZIP archives put everything in a single root folder,
 	# which means several files/folders may be created in `root_dir` after extraction.

@@ -15,6 +15,10 @@ run/main_scene="uid://bmfsx35o50b8f"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Decks="*uid://b75nwmf0drlxq"
+
 [display]
 
 window/size/viewport_width=720
