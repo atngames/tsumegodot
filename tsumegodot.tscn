@@ -51,6 +51,7 @@ layout_mode = 2
 metadata/_tab_index = 2
 
 [node name="Packs" type="MarginContainer" parent="MarginContainer/TabContainer" unique_id=1265643841]
+unique_name_in_owner = true
 visible = false
 layout_mode = 2
 metadata/_tab_index = 3

@@ -6,9 +6,9 @@ Bedtime Tsumego 2,5k,bedtime-tsumego-part-2.zip
 Bedtime Tsumego 3,5k,bedtime-tsumego-part-3.zip
 Common Life & Death Problems,4k,common-life-and-death-problems.zip
 Compact Go Puzzles to Learn the Basics,7k,compact-go-puzzles-to-learn-the-basics.zip
-Fighting and Escaping,4k,fighting-and-escaping-part-1.zip
-Fighting and Escaping,4k,fighting-and-escaping-part-2.zip
-Fighting and Escaping,4k,fighting-and-escaping-part-3.zip
+Fighting and Escaping 1,4k,fighting-and-escaping-part-1.zip
+Fighting and Escaping 2,4k,fighting-and-escaping-part-2.zip
+Fighting and Escaping 3,4k,fighting-and-escaping-part-3.zip
 Fujisawa Shuko Classroom,4k,fujisawa-shuko-classroom.zip
 Go Endgame Techniques,3k,go-endgame-techniques.zip
 Gokyo Seimyo Endgame,1d,gokyo-seimyo-endgame.zip
