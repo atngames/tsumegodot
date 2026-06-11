@@ -20,6 +20,7 @@ func _ready() -> void:
 	if not user_dir.file_exists("packs.txt"):
 		var file = FileAccess.open("packs.txt", FileAccess.WRITE)
 		file.close()
+		packs_dir = DirAccess.open("user://packs/")
 	if not user_dir.dir_exists("packs/"):
 		user_dir.make_dir("packs/")
 	request_packs()
