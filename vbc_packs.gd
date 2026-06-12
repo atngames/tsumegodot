@@ -17,12 +17,12 @@ func _ready() -> void:
 	add_child(http_request)
 	http_request.request_completed.connect(self._http_request_completed)
 	visibility_changed.connect(self._on_visibility_changed)
+	if not user_dir.dir_exists("packs/"):
+		user_dir.make_dir("packs/")
+		packs_dir = DirAccess.open("user://packs/")
 	if not user_dir.file_exists("packs.txt"):
 		var file = FileAccess.open("packs.txt", FileAccess.WRITE)
 		file.close()
-		packs_dir = DirAccess.open("user://packs/")
-	if not user_dir.dir_exists("packs/"):
-		user_dir.make_dir("packs/")
 	request_packs()
 
 
