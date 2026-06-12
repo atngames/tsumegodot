@@ -52,14 +52,10 @@ func _on_pack_pressed(zipfile, checkbox: CheckBox):
 func _on_checkbox_pressed(zipfile, checkbox: CheckBox):
 	var pack = zipfile.get_basename()
 	if checkbox.button_pressed:
-		var all_files = packs_dir.get_files_at("user://packs/%s" % pack)
-		var nb_problems = (all_files.size() - 1) / 4
-		for i in nb_problems:
-			Decks.add_card(pack,"p%04d" % (i+1), "s%04d" % (i+1))
-		Decks.packs.append(pack)
+		Decks.add_pack(pack)
 	else:
 		Decks.remove_pack(pack)
-	print (Decks.card_nb)
+	print ("New cards nb = %s" % Decks.cards_nb)
 
 
 func _on_visibility_changed():

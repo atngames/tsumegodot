@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b17w8beqaa4qv" path="res://tsumegodot.gd" id="1_q33w4"]
 [ext_resource type="Script" uid="uid://fwbohwfxlk01" path="res://vbc_packs.gd" id="2_ecp28"]
 [ext_resource type="Script" uid="uid://b05ofmig65qom" path="res://vbc_deck.gd" id="3_5ho8c"]
+[ext_resource type="Script" uid="uid://ba4eahtmtqveu" path="res://hbc_move_buttons.gd" id="3_fx2wd"]
 [ext_resource type="Script" uid="uid://b31s7pi3l1m20" path="res://tb_card.gd" id="3_oskct"]
 
 [node name="Tsumegodot" type="Control" unique_id=81857247]
@@ -42,10 +43,53 @@ unique_name_in_owner = true
 layout_mode = 2
 metadata/_tab_index = 0
 
-[node name="TBCard" type="TextureButton" parent="MarginContainer/TabContainer/Study" unique_id=2014802377]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/TabContainer/Study" unique_id=261993621]
+layout_mode = 2
+
+[node name="TBCard" type="TextureButton" parent="MarginContainer/TabContainer/Study/VBoxContainer" unique_id=2014802377]
 layout_mode = 2
 stretch_mode = 5
 script = ExtResource("3_oskct")
+
+[node name="LMoveTo" type="Label" parent="MarginContainer/TabContainer/Study/VBoxContainer" unique_id=1946755641]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Move to :"
+
+[node name="HBCMoveButtons" type="HBoxContainer" parent="MarginContainer/TabContainer/Study/VBoxContainer" unique_id=1369059190]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("3_fx2wd")
+
+[node name="B1" type="Button" parent="MarginContainer/TabContainer/Study/VBoxContainer/HBCMoveButtons" unique_id=1275476115]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "3"
+
+[node name="B2" type="Button" parent="MarginContainer/TabContainer/Study/VBoxContainer/HBCMoveButtons" unique_id=942013998]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "10"
+
+[node name="B3" type="Button" parent="MarginContainer/TabContainer/Study/VBoxContainer/HBCMoveButtons" unique_id=671464385]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "20"
+
+[node name="BMid" type="Button" parent="MarginContainer/TabContainer/Study/VBoxContainer/HBCMoveButtons" unique_id=784563879]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Mid"
+
+[node name="BTwoThirds" type="Button" parent="MarginContainer/TabContainer/Study/VBoxContainer/HBCMoveButtons" unique_id=566780182]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "2/3"
+
+[node name="BEnd" type="Button" parent="MarginContainer/TabContainer/Study/VBoxContainer/HBCMoveButtons" unique_id=1551804825]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "End"
 
 [node name="Deck" type="MarginContainer" parent="MarginContainer/TabContainer" unique_id=808973703]
 unique_name_in_owner = true

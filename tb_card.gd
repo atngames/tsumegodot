@@ -8,6 +8,8 @@ var recto = true
 func _ready() -> void:
 	visibility_changed.connect(self._on_visibility_changed)
 	pressed.connect(self._on_click)
+	Decks.deck_changed.connect(self._on_deck_changed)
+	_on_visibility_changed()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,6 +27,11 @@ func _on_visibility_changed():
 		recto = true
 
 
+func _on_deck_changed():
+	Decks.save_deck()
+	_on_visibility_changed()
+
+
 func _on_click():
 	if Decks.first_card == null : return
 
@@ -34,6 +41,7 @@ func _on_click():
 	else :
 		texture_normal = load("user://packs/%s/%s.svg" % [Decks.first_card.pack, Decks.first_card.recto])
 		recto = true
+
 
 	#Decks.move_first_card_to(-1)
 	#if FileAccess.file_exists("user://packs/%s/%s.svg" % [Decks.first_card.pack, Decks.first_card.recto]):
