@@ -17,13 +17,19 @@ func _process(delta: float) -> void:
 	pass
 
 
+func load_svg_as_texture(path):
+	var texture = ImageTexture.new()
+	texture = ImageTexture.create_from_image(Image.load_from_file(path))
+	#texture_normal = load("user://packs/%s/%s.svg" % [Decks.first_card.pack, Decks.first_card.recto])
+	return texture
+
 func _on_visibility_changed():
 	if Decks.first_card == null :
 		texture_normal = null
 		return
 
 	if %Study.visible:
-		texture_normal = load("user://packs/%s/%s.svg" % [Decks.first_card.pack, Decks.first_card.recto])
+		texture_normal = load_svg_as_texture("user://packs/%s/%s.svg" % [Decks.first_card.pack, Decks.first_card.recto])
 		recto = true
 
 
@@ -36,10 +42,10 @@ func _on_click():
 	if Decks.first_card == null : return
 
 	if recto:
-		texture_normal = load("user://packs/%s/%s.svg" % [Decks.first_card.pack, Decks.first_card.verso])
+		texture_normal = load_svg_as_texture("user://packs/%s/%s.svg" % [Decks.first_card.pack, Decks.first_card.verso])
 		recto = false
 	else :
-		texture_normal = load("user://packs/%s/%s.svg" % [Decks.first_card.pack, Decks.first_card.recto])
+		texture_normal = load_svg_as_texture("user://packs/%s/%s.svg" % [Decks.first_card.pack, Decks.first_card.recto])
 		recto = true
 
 

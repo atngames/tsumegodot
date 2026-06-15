@@ -1,12 +1,14 @@
 extends VBoxContainer
 
 
-var packs_dir = DirAccess.open("user://packs/")
-
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	visibility_changed.connect(self._on_visibility_changed)
+	if not DirAccess.dir_exists_absolute("user://packs/"):
+		DirAccess.make_dir_absolute("user://packs/")
+	if not FileAccess.file_exists("user://packs.txt"):
+		var file = FileAccess.open("user://packs.txt", FileAccess.WRITE)
+		file.close()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,7 +27,7 @@ func rebuild_deck():
 	for line in content.split("\n", false) :
 		var line_content = line.split(",")
 
-		if packs_dir.dir_exists(line_content[2].get_basename()):
+		if DirAccess.dir_exists_absolute("user://packs/%s" % line_content[2].get_basename()):
 			var hbc = HBoxContainer.new()
 			add_child(hbc)
 			hbc.add_theme_constant_override("separation", 16)

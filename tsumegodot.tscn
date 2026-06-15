@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://bmfsx35o50b8f"]
 
+[ext_resource type="Theme" uid="uid://v5ghneg8vq3n" path="res://themes/main_theme.tres" id="1_fx2wd"]
 [ext_resource type="Script" uid="uid://b17w8beqaa4qv" path="res://tsumegodot.gd" id="1_q33w4"]
 [ext_resource type="Script" uid="uid://fwbohwfxlk01" path="res://vbc_packs.gd" id="2_ecp28"]
 [ext_resource type="Script" uid="uid://b05ofmig65qom" path="res://vbc_deck.gd" id="3_5ho8c"]
+[ext_resource type="Script" uid="uid://c72vcikniplb6" path="res://hbc_menu.gd" id="3_70gvy"]
 [ext_resource type="Script" uid="uid://ba4eahtmtqveu" path="res://hbc_move_buttons.gd" id="3_fx2wd"]
 [ext_resource type="Script" uid="uid://b31s7pi3l1m20" path="res://tb_card.gd" id="3_oskct"]
 
@@ -15,6 +17,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme = ExtResource("1_fx2wd")
 script = ExtResource("1_q33w4")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1439819481]
@@ -24,84 +27,116 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 16
-theme_override_constants/margin_top = 16
-theme_override_constants/margin_right = 16
-theme_override_constants/margin_bottom = 16
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
 
 [node name="ColorRect" type="ColorRect" parent="MarginContainer" unique_id=1385125145]
 layout_mode = 2
 color = Color(0.62152386, 0.6215239, 0.6215237, 1)
 
-[node name="TabContainer" type="TabContainer" parent="MarginContainer" unique_id=1018814304]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1675266313]
 layout_mode = 2
+
+[node name="HBCMenu" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1769699024]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("3_70gvy")
+
+[node name="BStudy" type="Button" parent="MarginContainer/VBoxContainer/HBCMenu" unique_id=2080617910]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Study"
+
+[node name="BDeck" type="Button" parent="MarginContainer/VBoxContainer/HBCMenu" unique_id=1946236887]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Deck"
+
+[node name="BPacks" type="Button" parent="MarginContainer/VBoxContainer/HBCMenu" unique_id=411716955]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Packs"
+
+[node name="BSettings" type="Button" parent="MarginContainer/VBoxContainer/HBCMenu" unique_id=1160870721]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Settings"
+
+[node name="TCMainPanel" type="TabContainer" parent="MarginContainer/VBoxContainer" unique_id=1018814304]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
 tab_alignment = 1
 current_tab = 0
+tabs_visible = false
 
-[node name="Study" type="MarginContainer" parent="MarginContainer/TabContainer" unique_id=1617601170]
+[node name="Study" type="MarginContainer" parent="MarginContainer/VBoxContainer/TCMainPanel" unique_id=1617601170]
 unique_name_in_owner = true
 layout_mode = 2
 metadata/_tab_index = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/TabContainer/Study" unique_id=261993621]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TCMainPanel/Study" unique_id=261993621]
 layout_mode = 2
 
-[node name="TBCard" type="TextureButton" parent="MarginContainer/TabContainer/Study/VBoxContainer" unique_id=2014802377]
+[node name="TBCard" type="TextureButton" parent="MarginContainer/VBoxContainer/TCMainPanel/Study/VBoxContainer" unique_id=2014802377]
 layout_mode = 2
+size_flags_vertical = 3
 stretch_mode = 5
 script = ExtResource("3_oskct")
 
-[node name="LMoveTo" type="Label" parent="MarginContainer/TabContainer/Study/VBoxContainer" unique_id=1946755641]
+[node name="LMoveTo" type="Label" parent="MarginContainer/VBoxContainer/TCMainPanel/Study/VBoxContainer" unique_id=1946755641]
 unique_name_in_owner = true
 layout_mode = 2
 text = "Move to :"
 
-[node name="HBCMoveButtons" type="HBoxContainer" parent="MarginContainer/TabContainer/Study/VBoxContainer" unique_id=1369059190]
+[node name="HBCMoveButtons" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TCMainPanel/Study/VBoxContainer" unique_id=1369059190]
 unique_name_in_owner = true
 layout_mode = 2
 script = ExtResource("3_fx2wd")
 
-[node name="B1" type="Button" parent="MarginContainer/TabContainer/Study/VBoxContainer/HBCMoveButtons" unique_id=1275476115]
+[node name="B1" type="Button" parent="MarginContainer/VBoxContainer/TCMainPanel/Study/VBoxContainer/HBCMoveButtons" unique_id=1275476115]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "3"
 
-[node name="B2" type="Button" parent="MarginContainer/TabContainer/Study/VBoxContainer/HBCMoveButtons" unique_id=942013998]
+[node name="B2" type="Button" parent="MarginContainer/VBoxContainer/TCMainPanel/Study/VBoxContainer/HBCMoveButtons" unique_id=942013998]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "10"
 
-[node name="B3" type="Button" parent="MarginContainer/TabContainer/Study/VBoxContainer/HBCMoveButtons" unique_id=671464385]
+[node name="B3" type="Button" parent="MarginContainer/VBoxContainer/TCMainPanel/Study/VBoxContainer/HBCMoveButtons" unique_id=671464385]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "20"
 
-[node name="BMid" type="Button" parent="MarginContainer/TabContainer/Study/VBoxContainer/HBCMoveButtons" unique_id=784563879]
+[node name="BMid" type="Button" parent="MarginContainer/VBoxContainer/TCMainPanel/Study/VBoxContainer/HBCMoveButtons" unique_id=784563879]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Mid"
 
-[node name="BTwoThirds" type="Button" parent="MarginContainer/TabContainer/Study/VBoxContainer/HBCMoveButtons" unique_id=566780182]
+[node name="BTwoThirds" type="Button" parent="MarginContainer/VBoxContainer/TCMainPanel/Study/VBoxContainer/HBCMoveButtons" unique_id=566780182]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "2/3"
 
-[node name="BEnd" type="Button" parent="MarginContainer/TabContainer/Study/VBoxContainer/HBCMoveButtons" unique_id=1551804825]
+[node name="BEnd" type="Button" parent="MarginContainer/VBoxContainer/TCMainPanel/Study/VBoxContainer/HBCMoveButtons" unique_id=1551804825]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "End"
 
-[node name="Deck" type="MarginContainer" parent="MarginContainer/TabContainer" unique_id=808973703]
+[node name="Deck" type="MarginContainer" parent="MarginContainer/VBoxContainer/TCMainPanel" unique_id=808973703]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
-[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/TabContainer/Deck" unique_id=1161938454]
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer/TCMainPanel/Deck" unique_id=1161938454]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/TabContainer/Deck/ScrollContainer" unique_id=671676555]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/TCMainPanel/Deck/ScrollContainer" unique_id=671676555]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -110,21 +145,21 @@ theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 8
 
-[node name="VBCDeck" type="VBoxContainer" parent="MarginContainer/TabContainer/Deck/ScrollContainer/MarginContainer" unique_id=1420874246]
+[node name="VBCDeck" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TCMainPanel/Deck/ScrollContainer/MarginContainer" unique_id=1420874246]
 layout_mode = 2
 script = ExtResource("3_5ho8c")
 
-[node name="Packs" type="MarginContainer" parent="MarginContainer/TabContainer" unique_id=1265643841]
+[node name="Packs" type="MarginContainer" parent="MarginContainer/VBoxContainer/TCMainPanel" unique_id=1265643841]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
 metadata/_tab_index = 2
 
-[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/TabContainer/Packs" unique_id=2099327900]
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer/TCMainPanel/Packs" unique_id=2099327900]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/TabContainer/Packs/ScrollContainer" unique_id=782373305]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/TCMainPanel/Packs/ScrollContainer" unique_id=782373305]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -133,14 +168,15 @@ theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 8
 
-[node name="VBCPacks" type="VBoxContainer" parent="MarginContainer/TabContainer/Packs/ScrollContainer/MarginContainer" unique_id=161578874]
+[node name="VBCPacks" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TCMainPanel/Packs/ScrollContainer/MarginContainer" unique_id=161578874]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/separation = 8
 script = ExtResource("2_ecp28")
 
-[node name="Settings" type="MarginContainer" parent="MarginContainer/TabContainer" unique_id=298764095]
+[node name="Settings" type="MarginContainer" parent="MarginContainer/VBoxContainer/TCMainPanel" unique_id=298764095]
+unique_name_in_owner = true
 visible = false
 layout_mode = 2
 metadata/_tab_index = 3

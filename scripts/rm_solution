@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for d in ./*; do
+	if [ -d "$d" ]; then
+		cd "$d"
+		pwd
+		for f in ./s*.svg; do
+			sed -i -z 's/<path\n.*\n.*\n.*\n.*Solution.*\/>//' "${f}"
+			echo "${f}"
+		done
+		cd ..
+	fi
+done
+
