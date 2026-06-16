@@ -29,7 +29,7 @@ func _process(delta: float) -> void:
 
 func request_packs() :
 	http_request.set_download_file("user://packs.txt")
-	var error = http_request.request("https://raw.githubusercontent.com/atngames/tsumegodot/main/packs/.packs.txt")
+	var error = http_request.request("https://raw.githubusercontent.com/atngames/tsumegodot/main/packs.txt")
 	if error != OK:
 		push_error("An error occurred in the pack HTTP request.")
 		return
