@@ -20,7 +20,7 @@ func _process(delta: float) -> void:
 func load_svg_as_texture(path):
 	var texture = ImageTexture.new()
 	texture = ImageTexture.create_from_image(Image.load_from_file(path))
-	#texture_normal = load("user://packs/%s/%s.svg" % [Decks.first_card.pack, Decks.first_card.recto])
+	#texture.set_size_override()
 	return texture
 
 func _on_visibility_changed():

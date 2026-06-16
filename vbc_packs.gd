@@ -63,6 +63,7 @@ func rebuild_packs_list():
 		hbc.set_h_size_flags(hbc.SIZE_EXPAND_FILL)
 
 		var delete_or_download = TextureButton.new()
+		#delete_or_download
 		delete_or_download.stretch_mode = delete_or_download.STRETCH_KEEP_ASPECT_CENTERED
 		delete_or_download.mouse_entered.connect(self._on_button_mouse_hover.bind(delete_or_download))
 		delete_or_download.mouse_exited.connect(self._on_button_mouse_unhover.bind(delete_or_download))
@@ -88,10 +89,15 @@ func rebuild_packs_list():
 		hbc.add_child(label_rank)
 		label_rank.text = "(%s)" % line_content[1]
 
+		var margin_button_fav = MarginContainer.new()
+		hbc.add_child(margin_button_fav)
 		var button_fav := TextureButton.new()
-		hbc.add_child(button_fav)
-		button_fav.stretch_mode = button_fav.STRETCH_KEEP_ASPECT_CENTERED
+		margin_button_fav.add_child(button_fav)
+		button_fav.size_flags_vertical = Control.SIZE_EXPAND_FILL
+		button_fav.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED
 		button_fav.texture_normal = icon_non_fav
+		button_fav.custom_minimum_size = Vector2(32, 32)
+		#button_fav.minimum_size_changed.emit()
 
 
 func _on_button_mouse_hover(button: TextureButton) -> void:
