@@ -7,6 +7,7 @@ var http_request := HTTPRequest.new()
 var icon_non_fav = preload("res://icons/NonFavorite.svg")
 var icon_download = preload("res://icons/lets-icons--import.svg")
 var icon_del = preload("res://icons/lets-icons--del-alt.svg")
+var icon_waiting = preload("res://icons/lets-icons--box-refresh-right.svg")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -72,7 +73,7 @@ func rebuild_packs_list():
 			delete_or_download.pressed.connect(self._on_del_pressed.bind(line_content[2]))
 		else:
 			delete_or_download.texture_normal = icon_download
-			delete_or_download.pressed.connect(self._on_download_pressed.bind(line_content[2]))
+			delete_or_download.pressed.connect(self._on_download_pressed.bind(line_content[2], delete_or_download))
 		delete_or_download.custom_minimum_size = Vector2(32, 32)
 		hbc.add_child(delete_or_download)
 
@@ -115,7 +116,11 @@ func _on_visibility_changed():
 
 func _on_del_pressed(file):
 	var confirmDelete := ConfirmationDialog.new()
-	confirmDelete.popup_exclusive_centered_clamped(self)
+	confirmDelete.theme = load("res://themes/main_theme.tres")
+	confirmDelete.title = ""
+	confirmDelete.dialog_text = "Do you want to delete\n%s ?" % file
+	confirmDelete.min_size = Vector2(400,300)
+	confirmDelete.popup_exclusive_centered(self)
 	confirmDelete.confirmed.connect(self._on_delete_confirmed.bind(file))
 
 func _on_delete_confirmed(file):
@@ -133,9 +138,10 @@ func remove_pack(directory: String) -> void:
 	DirAccess.remove_absolute("user://packs/%s" % directory)
 
 
-func _on_download_pressed(file):
+func _on_download_pressed(file, button):
 	# download zip file
 	var zip_request := HTTPRequest.new()
+	button.texture_normal = icon_waiting
 	add_child(zip_request)
 	zip_request.request_completed.connect(self._zip_request_completed.bind(file, zip_request))
 	zip_request.set_download_file("user://packs/%s" % file)
