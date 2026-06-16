@@ -73,6 +73,7 @@ func rebuild_packs_list():
 		else:
 			delete_or_download.texture_normal = icon_download
 			delete_or_download.pressed.connect(self._on_download_pressed.bind(line_content[2]))
+		delete_or_download.custom_minimum_size = Vector2(32, 32)
 		hbc.add_child(delete_or_download)
 
 		var button_pack = Button.new()
@@ -89,10 +90,10 @@ func rebuild_packs_list():
 		hbc.add_child(label_rank)
 		label_rank.text = "(%s)" % line_content[1]
 
-		var margin_button_fav = MarginContainer.new()
-		hbc.add_child(margin_button_fav)
+		#var margin_button_fav = MarginContainer.new()
+		#margin_button_fav.add_child(button_fav)
 		var button_fav := TextureButton.new()
-		margin_button_fav.add_child(button_fav)
+		hbc.add_child(button_fav)
 		button_fav.size_flags_vertical = Control.SIZE_EXPAND_FILL
 		button_fav.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED
 		button_fav.texture_normal = icon_non_fav
@@ -119,14 +120,16 @@ func _on_del_pressed(file):
 
 func _on_delete_confirmed(file):
 	remove_pack(file.get_basename())
+	Decks.remove_pack(file.get_basename())
 	rebuild_packs_list()
+	print("removed")
 
 
 func remove_pack(directory: String) -> void:
 	for dir_name in DirAccess.get_directories_at("user://packs/%s" % directory):
 		remove_pack(directory.path_join(dir_name))
 	for file_name in DirAccess.get_files_at("user://packs/%s" % directory):
-		DirAccess.remove_absolute(directory.path_join(file_name))
+		DirAccess.remove_absolute("user://packs/%s" % directory.path_join(file_name))
 	DirAccess.remove_absolute("user://packs/%s" % directory)
 
 

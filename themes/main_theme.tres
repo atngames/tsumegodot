@@ -1,5 +1,8 @@
 [gd_resource type="Theme" format=3 uid="uid://v5ghneg8vq3n"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vxwtt"]
+
 [resource]
-Button/font_sizes/font_size = 48
+Button/font_sizes/font_size = 32
 Label/font_sizes/font_size = 32
+TabContainer/styles/panel = SubResource("StyleBoxEmpty_vxwtt")

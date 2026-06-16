@@ -13,7 +13,7 @@ config_version=5
 config/name="tsumegodot"
 run/main_scene="uid://bmfsx35o50b8f"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-boot_splash/bg_color=Color(0.5014065, 0.50140655, 0.50140643, 1)
+boot_splash/bg_color=Color(0.5019608, 0.5019608, 0.5019608, 1)
 config/icon="res://icon.svg"
 
 [autoload]
