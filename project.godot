@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="TsumeGoGos"
+config/name="TsumeGoGo"
 config/description="A very simple flash card app to learn thousands of tsumego. s"
 run/main_scene="uid://bmfsx35o50b8f"
 config/features=PackedStringArray("4.6", "GL Compatibility")

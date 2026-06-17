@@ -40,35 +40,11 @@ func _process(delta: float) -> void:
 
 
 func add_pack(pack):
-	var save_file = FileAccess.open("user://pack_%s.save" % pack, FileAccess.READ)
-	if not save_file :
-		var all_files = DirAccess.get_files_at("user://packs/%s" % pack)
-		var nb_problems = (all_files.size() - 1) / 4
-		for i in nb_problems:
-			Decks.add_card(pack,"p%04d" % (i+1), "s%04d" % (i+1))
-		Decks.packs.append(pack)
-		cards_nb_changed.emit()
-		deck_changed.emit()
-		return
-
-	var json = JSON.new()
-	var json_string = save_file.get_line()
-	var error = json.parse(json_string)
-	if error == OK:
-		var data_received = json.data
-		if typeof(data_received) == TYPE_ARRAY:
-			for card in data_received:
-				if not packs.has(card[0]) :
-					packs.append(card[0])
-				Decks.add_card(card[0], card[1], card[2])
-			Decks.deck_changed.emit()
-		else:
-			print("Unexpected data")
-	else:
-		print("JSON Parse Error: ", json.get_error_message(), " in ", json_string, " at line ", json.get_error_line())
-		print(json_string)
-	save_file.close()
-
+	var all_files = DirAccess.get_files_at("user://packs/%s" % pack)
+	var nb_problems = (all_files.size() - 1) / 4
+	for i in nb_problems:
+		Decks.add_card(pack,"p%04d" % (i+1), "s%04d" % (i+1))
+	Decks.packs.append(pack)
 	cards_nb_changed.emit()
 	deck_changed.emit()
 
@@ -136,12 +112,11 @@ func remove_pack(pack):
 	packs.erase(pack)
 	cards_nb_changed.emit()
 	deck_changed.emit()
-
-	# remember cards placement for next time
-	var json_string = JSON.stringify(removed_cards)
-	var save_file = FileAccess.open("user://pack_%s.save" % pack, FileAccess.WRITE)
-	save_file.store_line(json_string)
-	save_file.close()
+	## remember cards placement for next time
+	#var json_string = JSON.stringify(removed_cards)
+	#var save_file = FileAccess.open("user://pack_%s.save" % pack, FileAccess.WRITE)
+	#save_file.store_line(json_string)
+	#save_file.close()
 
 
 func remove_card(card_to_remove: Card):
