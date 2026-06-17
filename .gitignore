@@ -10,7 +10,6 @@ export_credentials.cfg
 *.tmp
 
 #ATN
-bin/
 android/
 
 # Imported translations (automatically generated from CSV files)
