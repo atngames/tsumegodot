@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="tsumegodot"
+config/name="TsumeGoGos"
+config/description="A very simple flash card app to learn thousands of tsumego. s"
 run/main_scene="uid://bmfsx35o50b8f"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 boot_splash/bg_color=Color(0.5019608, 0.5019608, 0.5019608, 1)

@@ -127,7 +127,6 @@ func _on_delete_confirmed(file):
 	remove_pack(file.get_basename())
 	Decks.remove_pack(file.get_basename())
 	rebuild_packs_list()
-	print("removed")
 
 
 func remove_pack(directory: String) -> void:

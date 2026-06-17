@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://bmfsx35o50b8f"]
 
 [ext_resource type="Theme" uid="uid://v5ghneg8vq3n" path="res://themes/main_theme.tres" id="1_fx2wd"]
-[ext_resource type="Script" uid="uid://b17w8beqaa4qv" path="res://tsumegodot.gd" id="1_q33w4"]
-[ext_resource type="Script" uid="uid://fwbohwfxlk01" path="res://vbc_packs.gd" id="2_ecp28"]
-[ext_resource type="Script" uid="uid://b05ofmig65qom" path="res://vbc_deck.gd" id="3_5ho8c"]
-[ext_resource type="Script" uid="uid://c72vcikniplb6" path="res://hbc_menu.gd" id="3_70gvy"]
-[ext_resource type="Script" uid="uid://ba4eahtmtqveu" path="res://hbc_move_buttons.gd" id="3_fx2wd"]
-[ext_resource type="Script" uid="uid://b31s7pi3l1m20" path="res://tb_card.gd" id="3_oskct"]
+[ext_resource type="Script" uid="uid://b17w8beqaa4qv" path="res://scripts/tsumegodot.gd" id="1_q33w4"]
+[ext_resource type="Script" uid="uid://fwbohwfxlk01" path="res://scripts/vbc_packs.gd" id="2_ecp28"]
+[ext_resource type="Script" uid="uid://b05ofmig65qom" path="res://scripts/vbc_deck.gd" id="3_5ho8c"]
+[ext_resource type="Script" uid="uid://c72vcikniplb6" path="res://scripts/hbc_menu.gd" id="3_70gvy"]
+[ext_resource type="Script" uid="uid://ba4eahtmtqveu" path="res://scripts/hbc_move_buttons.gd" id="3_fx2wd"]
+[ext_resource type="Script" uid="uid://b31s7pi3l1m20" path="res://scripts/tb_card.gd" id="3_oskct"]
 
 [node name="Tsumegodot" type="Control" unique_id=81857247]
 layout_mode = 3

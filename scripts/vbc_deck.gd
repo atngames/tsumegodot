@@ -57,7 +57,6 @@ func _on_checkbox_pressed(zipfile, checkbox: CheckBox):
 		Decks.add_pack(pack)
 	else:
 		Decks.remove_pack(pack)
-	print ("New cards nb = %s" % Decks.cards_nb)
 
 
 func _on_visibility_changed():
