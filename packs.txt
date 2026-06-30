@@ -1,4 +1,4 @@
-Katago Josekis (full), 10d, joseki.zip
+Katago Josekis full,10d,josekis.zip
 200 Basic Go Problems,6k,200-basic-go-problems.zip
 200 Selected Problems for Repetitive Practice,6k,200-selected-problems-for-repetitive-practice.zip
 Beautiful Dan-Level Tsumego 100,1d,beautiful-dan-level-tsumego-100.zip
