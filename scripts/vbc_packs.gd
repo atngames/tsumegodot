@@ -150,7 +150,9 @@ func _on_download_pressed(file, button):
 
 
 func _zip_request_completed(result, response_code, headers, body, file, zip_request):
+	print("extracting")
 	extract_zip_file(file)
+	print("done")
 	zip_request.queue_free()
 	DirAccess.remove_absolute("user://packs/%s" % file)
 	rebuild_packs_list()
