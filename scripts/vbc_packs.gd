@@ -182,7 +182,15 @@ func extract_zip_file(zip_name):
 		# Write file contents, creating folders automatically when needed.
 		# Not all ZIP archives are strictly ordered, so we need to do this in case
 		# the file entry comes before the folder entry.
+
 		packs_dir.make_dir_recursive(packs_dir.get_current_dir().path_join(file_path).get_base_dir())
 		var file = FileAccess.open(packs_dir.get_current_dir().path_join(file_path), FileAccess.WRITE)
 		var buffer = reader.read_file(file_path)
 		file.store_buffer(buffer)
+
+		# If the current file is a zip itself
+		if file_path.ends_with(".zip"):
+			extract_zip_file("%s/%s" % [packs_dir, file_path])
+			print("%s/%s extracted" % [packs_dir, file_path])
+
+	print("4")
