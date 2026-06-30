@@ -4,7 +4,7 @@ for d in ./*; do
 	if [ -d "$d" ]; then
 		cd "$d"
 		pwd
-		for f in ./s*.svg; do
+		for f in ./*.svg; do
 			mv "${f}" "${f}.old" 
 			inkscape --export-text-to-path --export-filename "${f}" "${f}.old"
 			rm "${f}.old"

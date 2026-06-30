@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="800"
+   height="1024"
+   viewBox="0 0 800 1024"
+   version="1.1"
+   id="svg32"
+   sodipodi:docname="s3220.svg.old"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs32" />
+  <sodipodi:namedview
+     id="namedview32"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <line
+     x1="127.94"
+     y1="176.20"
+     x2="127.94"
+     y2="875.80"
+     stroke="black"
+     stroke-width="2.59"
+     id="line1" />
+  <line
+     x1="205.67"
+     y1="176.20"
+     x2="205.67"
+     y2="875.80"
+     stroke="black"
+     stroke-width="2.59"
+     id="line2" />
+  <line
+     x1="283.40"
+     y1="176.20"
+     x2="283.40"
+     y2="875.80"
+     stroke="black"
+     stroke-width="2.59"
+     id="line3" />
+  <line
+     x1="361.13"
+     y1="176.20"
+     x2="361.13"
+     y2="875.80"
+     stroke="black"
+     stroke-width="2.59"
+     id="line4" />
+  <line
+     x1="438.87"
+     y1="176.20"
+     x2="438.87"
+     y2="875.80"
+     stroke="black"
+     stroke-width="2.59"
+     id="line5" />
+  <line
+     x1="516.60"
+     y1="176.20"
+     x2="516.60"
+     y2="875.80"
+     stroke="black"
+     stroke-width="2.59"
+     id="line6" />
+  <line
+     x1="594.33"
+     y1="176.20"
+     x2="594.33"
+     y2="875.80"
+     stroke="black"
+     stroke-width="2.59"
+     id="line7" />
+  <line
+     x1="672.06"
+     y1="176.20"
+     x2="672.06"
+     y2="875.80"
+     stroke="black"
+     stroke-width="2.59"
+     id="line8" />
+  <line
+     x1="749.80"
+     y1="176.20"
+     x2="749.80"
+     y2="875.80"
+     stroke="black"
+     stroke-width="6.48"
+     id="line9" />
+  <line
+     x1="50.20"
+     y1="253.94"
+     x2="749.80"
+     y2="253.94"
+     stroke="black"
+     stroke-width="2.59"
+     id="line10" />
+  <line
+     x1="50.20"
+     y1="331.67"
+     x2="749.80"
+     y2="331.67"
+     stroke="black"
+     stroke-width="2.59"
+     id="line11" />
+  <line
+     x1="50.20"
+     y1="409.40"
+     x2="749.80"
+     y2="409.40"
+     stroke="black"
+     stroke-width="2.59"
+     id="line12" />
+  <line
+     x1="50.20"
+     y1="487.13"
+     x2="749.80"
+     y2="487.13"
+     stroke="black"
+     stroke-width="2.59"
+     id="line13" />
+  <line
+     x1="50.20"
+     y1="564.87"
+     x2="749.80"
+     y2="564.87"
+     stroke="black"
+     stroke-width="2.59"
+     id="line14" />
+  <line
+     x1="50.20"
+     y1="642.60"
+     x2="749.80"
+     y2="642.60"
+     stroke="black"
+     stroke-width="2.59"
+     id="line15" />
+  <line
+     x1="50.20"
+     y1="720.33"
+     x2="749.80"
+     y2="720.33"
+     stroke="black"
+     stroke-width="2.59"
+     id="line16" />
+  <line
+     x1="50.20"
+     y1="798.06"
+     x2="749.80"
+     y2="798.06"
+     stroke="black"
+     stroke-width="2.59"
+     id="line17" />
+  <line
+     x1="50.20"
+     y1="875.80"
+     x2="749.80"
+     y2="875.80"
+     stroke="black"
+     stroke-width="6.48"
+     id="line18" />
+  <circle
+     cx="50.20"
+     cy="176.20"
+     r="7.77"
+     fill="black"
+     id="circle18" />
+  <circle
+     cx="50.20"
+     cy="642.60"
+     r="7.77"
+     fill="black"
+     id="circle19" />
+  <circle
+     cx="516.60"
+     cy="176.20"
+     r="7.77"
+     fill="black"
+     id="circle20" />
+  <circle
+     cx="516.60"
+     cy="642.60"
+     r="7.77"
+     fill="black"
+     id="circle21" />
+  <circle
+     cx="516.60"
+     cy="564.87"
+     r="35.40"
+     fill="black"
+     stroke="black"
+     stroke-width="1.00"
+     id="circle22" />
+  <circle
+     cx="594.33"
+     cy="487.13"
+     r="35.40"
+     fill="black"
+     stroke="black"
+     stroke-width="1.00"
+     id="circle23" />
+  <circle
+     cx="516.60"
+     cy="720.33"
+     r="35.40"
+     fill="black"
+     stroke="black"
+     stroke-width="1.00"
+     id="circle24" />
+  <circle
+     cx="516.60"
+     cy="409.40"
+     r="35.40"
+     fill="black"
+     stroke="black"
+     stroke-width="1.00"
+     id="circle25" />
+  <circle
+     cx="516.60"
+     cy="642.60"
+     r="35.40"
+     fill="black"
+     stroke="black"
+     stroke-width="1.00"
+     id="circle26" />
+  <circle
+     cx="594.33"
+     cy="720.33"
+     r="34.20"
+     fill="white"
+     stroke="black"
+     stroke-width="3.09"
+     id="circle27" />
+  <circle
+     cx="205.67"
+     cy="720.33"
+     r="34.20"
+     fill="white"
+     stroke="black"
+     stroke-width="3.09"
+     id="circle28" />
+  <circle
+     cx="672.06"
+     cy="487.13"
+     r="34.20"
+     fill="white"
+     stroke="black"
+     stroke-width="3.09"
+     id="circle29" />
+  <circle
+     cx="594.33"
+     cy="409.40"
+     r="34.20"
+     fill="white"
+     stroke="black"
+     stroke-width="3.09"
+     id="circle30" />
+  <circle
+     cx="594.33"
+     cy="642.60"
+     r="34.20"
+     fill="white"
+     stroke="black"
+     stroke-width="3.09"
+     id="circle31" />
+  <circle
+     cx="594.33"
+     cy="331.67"
+     r="34.20"
+     fill="white"
+     stroke="black"
+     stroke-width="3.09"
+     id="circle32" />
+  <path
+     d="m 593.51682,324.62801 v 22.042 h 3.7664 v -30.9444 h -2.4824 c -1.3268,4.7508 -2.1828,5.3928 -8.0036,6.1632 v 2.7392 z"
+     id="text32"
+     style="font-size:42.8px;font-family:Helvetica, Arial, sans-serif;text-anchor:middle"
+     aria-label="1" />
+</svg>
