@@ -159,19 +159,16 @@ func _zip_request_completed(result, response_code, headers, body, file, zip_requ
 
 
 func extract_zip_file(zip_name):
-	print("1")
 	var reader = ZIPReader.new()
 	var err = reader.open("user://packs/%s" % zip_name)
 	if err != OK :
 		print("error while extracting zip %s" % zip_name)
 		return
-	print("2")
 
 	# Destination directory for the extracted files (this folder must exist before extraction).
 	# Not all ZIP archives put everything in a single root folder,
 	# which means several files/folders may be created in `root_dir` after extraction.
 	var packs_dir = DirAccess.open("user://packs/")
-	print("3")
 	var files = reader.get_files()
 	for file_path in files:
 		# If the current entry is a directory.
@@ -187,10 +184,9 @@ func extract_zip_file(zip_name):
 		var file = FileAccess.open(packs_dir.get_current_dir().path_join(file_path), FileAccess.WRITE)
 		var buffer = reader.read_file(file_path)
 		file.store_buffer(buffer)
+		file.close()
 
 		# If the current file is a zip itself
 		if file_path.ends_with(".zip"):
-			extract_zip_file("%s/%s" % [packs_dir, file_path])
-			print("%s/%s extracted" % [packs_dir, file_path])
-
-	print("4")
+			extract_zip_file("%s" % file_path)
+			DirAccess.remove_absolute("user://packs/%s" % file_path)
